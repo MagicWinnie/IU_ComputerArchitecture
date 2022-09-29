@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "[1;36mWelcome to",
+		"os_version" : "1"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Segment Violation at 0x22f063668",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7f856597fb67: jtag_client + 0x83b67 (_ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base + 0x37)\n\t0x7f85324c4a81: edt_gedq + 0x112a81 (_ZN26GEDQ_DELETE_INSERT_COMMANDD2Ev + 0x8f)\n\t0x7f85324c4aff: edt_gedq + 0x112aff (_ZN26GEDQ_DELETE_INSERT_COMMANDD0Ev + 0x9)\n\t0x7f853244232e: edt_gedq + 0x9032e (_ZN23GEDQ_RUBBERBAND_COMMANDD2Ev + 0x34)\n\t0x7f8532442349: edt_gedq + 0x90349 (_ZN23GEDQ_RUBBERBAND_COMMANDD0Ev + 0x9)\n\t0x7f853eaa4315: gcl_uib + 0x6315 (_ZN15UIB_UNDO_ENGINE14append_commandEP11UIB_COMMAND + 0xdb)\n\t0x7f853244ae56: edt_gedq + 0x98e56 (_ZN14GEDQ_FRAME_WND15execute_commandEP11UIB_COMMAND + 0x5c)\n\t0x7f85324f5556: edt_gedq + 0x143556 (_ZN8GEDQ_PIN27update_for_in_place_editingEP9GEDQ_VIEWP12GEDQ_FILE_DBRSsj + 0x34e)\n\t0x7f853246d8f6: edt_gedq + 0xbb8f6 (_ZN9GEDQ_TEXT9stop_editEb + 0x3d6)\n\t0x7f853246ddd5: edt_gedq + 0xbbdd5 (_ZN14GEDQ_TEXT_EDIT19on_editing_finishedEv + 0x24d)\n\t0x7f853246df4e: edt_gedq + 0xbbf4e (_ZN14GEDQ_TEXT_EDIT18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv + 0x5e)\n\t0x7f85610847c8: QtCore.so.4 + 0x1cd7c8 (_ZN11QMetaObject8activateEP7QObjectPKS_iPPv + 0x488)\n\t0x7f8549fb5c7a: QtGui.so.4 + 0x68bc7a\n\t0x7f85610847c8: QtCore.so.4 + 0x1cd7c8 (_ZN11QMetaObject8activateEP7QObjectPKS_iPPv + 0x488)\n\t0x7f8549fc0510: QtGui.so.4 + 0x696510 (_ZN12QLineControl15processKeyEventEP9QKeyEvent + 0x1e0)\n\t0x7f8549fb59a9: QtGui.so.4 + 0x68b9a9 (_ZN9QLineEdit13keyPressEventEP9QKeyEvent + 0x29)\n\t0x7f853252e725: edt_gedq + 0x17c725 (_ZN14GEDQ_TEXT_EDIT13keyPressEventEP9QKeyEvent + 0xa1)\n\t0x7f8549b8fff1: QtGui.so.4 + 0x265ff1 (_ZN7QWidget5eventEP6QEvent + 0x531)\n\t0x7f8549fb638b: QtGui.so.4 + 0x68c38b (_ZN9QLineEdit5eventEP6QEvent + 0x7b)\n\t0x7f8549b2e84f: QtGui.so.4 + 0x20484f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)\n\t0x7f8549b3678a: QtGui.so.4 + 0x20c78a (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x1a6a)\n\t0x7f856106cac4: QtCore.so.4 + 0x1b5ac4 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)\n\t0x7f8549b2d9bc: QtGui.so.4 + 0x2039bc\n\t0x7f8549bdd58d: QtGui.so.4 + 0x2b358d\n\t0x7f8549bdf68f: QtGui.so.4 + 0x2b568f\n\t0x7f8549bb7484: QtGui.so.4 + 0x28d484 (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0xc84)\n\t0x7f8549be2d62: QtGui.so.4 + 0x2b8d62\n\t0x7f85445cce6b: glib-2.0.so.0 + 0x51e6b (g_main_context_dispatch + 0x25b)\n\t0x7f85445cd118: glib-2.0.so.0 + 0x52118\n\t0x7f85445cd1cf: glib-2.0.so.0 + 0x521cf (g_main_context_iteration + 0x2f)\n\t0x7f856109faf5: QtCore.so.4 + 0x1e8af5 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7f8549be289f: QtGui.so.4 + 0x2b889f\n\t0x7f856106bad5: QtCore.so.4 + 0x1b4ad5 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)\n\t0x7f856106bea8: QtCore.so.4 + 0x1b4ea8 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)\n\t0x7f8561070cc4: QtCore.so.4 + 0x1b9cc4 (_ZN16QCoreApplication4execEv + 0xb4)\n\t   0x401eab: quartus + 0x1eab (_Z8qgq_mainiPPKc + 0x7b)\n\t0x7f854d31ae30: ccl_msg + 0x3ee30 (_Z15msg_main_threadPv + 0x10)\n\t0x7f854c9deacc: ccl_thr + 0x5acc (thr_final_wrapper + 0xc)\n\t0x7f854d31aeef: ccl_msg + 0x3eeef (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f854ca51f9c: ccl_mem + 0x9f9c (_Z18mem_thread_wrapperPFPvS_ES_ + 0x5c)\n\t0x7f854ca20b39: ccl_err + 0x8b39 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f854c9deb0f: ccl_thr + 0x5b0f (thr_thread_wrapper + 0x15)\n\t0x7f854d31cea1: ccl_msg + 0x40ea1 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xb2)\n\t   0x401f91: quartus + 0x1f91 (main + 0x26)\n\t0x7f8545042d0a: c.so.6 + 0x23d0a (__libc_start_main + 0xea)\n\t   0x401d39: quartus + 0x1d39\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "20.1.1",
+		"build" : "720",
+		"edition" : "Lite Edition"
+	}
+}
