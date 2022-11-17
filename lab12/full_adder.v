@@ -1,0 +1,12 @@
+module full_adder(
+	input c_in, a, b,
+	output q, c_out
+	);
+	
+	wire temp, carry1, carry2;
+	
+	half_adder(a, b, temp, carry1);
+	half_adder(temp, c_in, q, carry2);
+	assign c_out = carry1 | carry2;
+	
+endmodule
